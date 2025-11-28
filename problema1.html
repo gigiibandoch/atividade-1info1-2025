@@ -21,9 +21,28 @@ dê uma olhada no arquivo "atividade_programacao-1info1.pdf" para maior clareza.
 */
 
 // Função
+  function f(x) {
+    let y = 2 * x ** 2 - 3 * x + 8;
+    return y
+  }
+
+  function g(x) {
+  if (x >= 1) {
+    let g = 0;
+    g = 3 * x - 8;
+    return g
+  }  
+  else {
+    let g = 0;
+    g = -2 * x ** 2 + 8 * x;
+    return g
+  }
+  } 
+
 
 // Aplicação
-
+  let aplica = f(-3);
+  let aplica2 = g(5);
 // Mostra resultado
-  
+  document.write(`f(-3) = ${aplica}, e f(5) = ${aplica2}.`);
 </script>
