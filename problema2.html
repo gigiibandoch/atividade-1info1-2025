@@ -6,7 +6,7 @@
   
   /* PROBLEMA 2:
   Considere a seguinte situação: a população de um determinado tipo de bactéria triplica de tamanho a cada 2 dias.
-  Construa uma função que calcule a população de uma colônia inicial mente com n bactérias, por um perı́odo de t dias.
+  Construa uma função que calcule a população de uma colônia inicialmente com n bactérias, por um perı́odo de t dias.
 
 Em seguida, aplique sua função para calcular a quantidade de bactérias após decorrido o perı́odo de um mês, para um
 colônia inicialmente com 30 bactérias.
@@ -14,14 +14,18 @@ colônia inicialmente com 30 bactérias.
 
 
 // Função
-function f(x) {
-  
+function calcularBacterias(n , t) {
+  for(let i = 0; i < t; i = i + 2) {
+    n = n * 3;
+  }
+  return n 
 }
 
 // Aplicação
-
+let n  = 30;
+let t = 30;
 
 // Mostra resultado
-
-
+let resposta = calcularBacterias(n , t);
+document.write(`A população após: ${t} dias é de ${resposta} bactérias.`);
 </script>
